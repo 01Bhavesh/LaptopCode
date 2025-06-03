@@ -1,18 +1,18 @@
 # LaptopCode
-public void getData(){
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-<select id="myDropdown">
- <option value="">-- Select --</option>
-</select>
-<script>
- $(document).ready(function () {
-   $.ajax({
+    <select id="myDropdown">
+     <option value="">-- Select --</option>
+    </select>
+    <script>
+    $(document).ready(function () {
+    $.ajax({
     type: "POST",
-   url: "Default.aspx/GetMessage",
-  data: '{}',
- contentType: "application/json; charset=utf-8",
+    url: "Default.aspx/GetMessage",
+    data: '{}',
+    contentType: "application/json; charset=utf-8",
       dataType: "json",
       success: function (response) {
         var items = response.d;
@@ -33,6 +33,5 @@ public void getData(){
        }
       }
     });
-  });
-</script>
-}
+    });
+    </script>
